@@ -1,5 +1,9 @@
 package scheduler;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 /*
  * Objective: Create a weekly scheduling application.
  * 
@@ -26,6 +30,32 @@ package scheduler;
 public class Scheduler {
 
     public static void main(String[] args) {
+    	
 
+    }
+    
+    public enum DaysOfTheWeek{
+    	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+    }
+    
+    public void userInterface() {
+    	JFrame frame = new JFrame();
+    	
+    	JPanel panel = new JPanel();
+    	frame.add(panel);
+    	
+    	JButton addEvent = new JButton();
+    	panel.add(addEvent);
+    	
+    	JButton viewEvents = new JButton();
+    	panel.add(viewEvents);
+    	
+    	JButton removeEvent = new JButton();
+    	panel.add(removeEvent);
+    	
+    }
+    
+    void addEvent() {
+    	
     }
 }
