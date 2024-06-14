@@ -1,11 +1,5 @@
 package scheduler;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 /*
  * Objective: Create a weekly scheduling application.
@@ -30,73 +24,15 @@ import javax.swing.JPanel;
  * - Make sure any enums or classes you create have properly encapsulated member
  *   variables.
  */
-public class Scheduler implements ActionListener {
+public class Scheduler{
 
     public static void main(String[] args) {
-    	userInterface();
+    	
 
     }
     
-    public enum DaysOfTheWeek{
-    	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
-    }
     
-    public static void userInterface() {
-    	JFrame frame = new JFrame();
-    	frame.show(true);
-    	
-    	JPanel panel = new JPanel();
-    	frame.add(panel);
-    	
-    	JButton addEventB = new JButton();
-    	panel.add(addEventB);
-    	addEventB.addActionListener(null);
-    	addEventB.setText("Add Event");
-    	
-    	JButton viewEventsB = new JButton();
-    	panel.add(viewEventsB);
-    	viewEventsB.addActionListener(null);
-    	viewEventsB.setText("View Events");
-    	
-    	
-    	//JLabel viewEventsL = new JLabel()
-    	
-    	JButton removeEventB = new JButton();
-    	panel.add(removeEventB);
-    	removeEventB.addActionListener(null);
-    	removeEventB.setText("Remove Event");
-    	
-    	frame.pack();
-    	
-    }
-    
-    void addEvent() {
-    	
-    }
-    
-    void removeEvent() {
-    	
-    }
-
-	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		Object button = arg0.toString();
-		
-		if(button.equals("viewEvents")) {
-			
-		}
-		
-		if(button.equals("addEvent")) {
-			addEvent();
-		}
-		
-		if(button.equals("removeEvent")) {
-			removeEvent();
-		}
 		
 		
-		
-		
-	}
+	
 }
