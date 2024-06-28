@@ -23,15 +23,17 @@ public enum DaysOfTheWeek {
 		}
 		
 		events.add(event);
-		//sortEvents();
+		sortEvents();
 	}
 	
 	public void removeEvent(String time) {
+		System.out.println(time);
 		Node<Event> current = events.getHead();
 		int pos = 0;
 		
 		while(current != null) {
-			if(current.getValue().getTime().equals(time)) {
+			if(current.getValue().getTime().equalsIgnoreCase(time)) {
+				events.remove(pos);
 				return;
 			}
 			current = current.getNext();
